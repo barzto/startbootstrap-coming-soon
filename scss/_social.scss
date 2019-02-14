@@ -13,7 +13,7 @@
       display: inline-block;
       > a {
         display: block;
-        color: white;
+        color: $primary-fg;
         background-color: fade-out($primary, 0.2);
         border-radius: 100%;
         font-size: 2rem;
@@ -51,6 +51,7 @@
           width: 4rem;
           &:hover {
             background-color: $primary;
+            color: $primary-fg;
           }
         }
       }

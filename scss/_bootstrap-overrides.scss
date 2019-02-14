@@ -1,6 +1,7 @@
 .btn-secondary {
   background-color: $secondary;
   border-color: $secondary;
+  color: $secondary-fg;
   &:active,
   &:focus,
   &:hover {
