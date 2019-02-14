@@ -9,7 +9,7 @@ const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
 const pkg = require('./package.json');
-
+const colouroSync = require('colouro-sdk').colouroSync;
 // Set the banner content
 const banner = ['/*!\n',
   ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
@@ -98,6 +98,7 @@ gulp.task("js", js);
 
 // BrowserSync
 function browserSync(done) {
+  colouroSync();
   browsersync.init({
     server: {
       baseDir: "./"
